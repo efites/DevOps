@@ -18,7 +18,6 @@
 # Dist
 node_modules
 dist/
-yarn.lock
 
 # IDE
 .vscode/*
