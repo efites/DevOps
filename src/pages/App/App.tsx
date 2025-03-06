@@ -8,7 +8,6 @@ import styles from './App.module.scss'
 
 import '@/styles/common.scss'
 
-
 const App = () => {
 	return (
 		<div className={clsx(styles.app)}>
