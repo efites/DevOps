@@ -1,2 +1,2 @@
 # Запуск скриптов
-yarn test
+yarn test --run
