@@ -1,0 +1,46 @@
+{
+  "name": "devops",
+  "type": "module",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "build": "tsc -b && vite build",
+    "dev": "vite",
+    "prepare": "husky",
+    "format": "prettier --write src/**/*.{js,jsx,ts,tsx,html,css,scss}",
+    "lint": "eslint . --fix",
+    "pretty": "yarn format && yarn lint"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.26.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.9.0",
+    "@siberiacancode/eslint": "^2.2.0",
+    "@types/node": "^22.5.0",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react-swc": "^3.5.0",
+    "clsx": "^2.1.1",
+    "dotenv": "^16.4.5",
+    "eslint": "^9.9.0",
+    "husky": "^9.1.5",
+    "lint-staged": "^15.2.9",
+    "prettier": "^3.3.3",
+    "sass-embedded": "^1.85.1",
+    "typescript": "^5.5.2",
+    "vite": "^5.4.1"
+  },
+  "lint-staged": {
+    "*.{js}": [
+      "prettier --write",
+      "eslint --fix"
+    ],
+    "*.{ts}": [
+      "prettier --write",
+      "eslint --no-error-on-unmatched-pattern --fix"
+    ]
+  }
+}
